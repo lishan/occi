@@ -23,7 +23,7 @@
         <el-menu-item index="2-2">集群扩容推荐</el-menu-item>
         <el-menu-item index="2-3">集群拓扑结构</el-menu-item>
       </el-submenu>
-      <el-menu-item class="pull-right">
+      <el-menu-item class="pull-right" style="margin-right: 20px;">
         <i class="fa fa-user"></i>&nbsp;admin
       </el-menu-item>
       <el-menu-item class="pull-right">
