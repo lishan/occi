@@ -1,19 +1,20 @@
 <template>
   <div id="app">
     <el-menu
-      :default-active="activeIndex2"
+      :default-active="activeIndex"
       class="el-menu-demo"
       mode="horizontal"
       @select="handleSelect"
       background-color="#545c64"
       text-color="#fff"
-      active-text-color="#ffd04b">
+      active-text-color="#ffd04b"
+      :router="true">
       <el-menu-item disabled class="opa1">
         <img style="height: 40px; width: 40px; margin-left: 20px;" src="./assets/logo.png">
         大数据智能运维平台
       </el-menu-item>
-      <el-menu-item style="margin-left: 60px;" index="1">仪表盘</el-menu-item>
-      <el-menu-item index="2">集群分析</el-menu-item>
+      <el-menu-item style="margin-left: 60px;" index="/">仪表盘</el-menu-item>
+      <el-menu-item index="/LogSearch">集群分析</el-menu-item>
       <el-menu-item index="3">租户分析</el-menu-item>
       <el-menu-item index="4">日志分析</el-menu-item>
       <el-submenu index="2">
@@ -38,13 +39,16 @@ export default {
   name: 'App',
   data() {
     return {
-      activeIndex: '1',
-      activeIndex2: '1'
     };
   },
   methods: {
     handleSelect(key, keyPath) {
       console.log(key, keyPath);
+    }
+  },
+  computed: {
+    activeIndex () {
+      return this.$route.path
     }
   }
 }
@@ -60,5 +64,8 @@ export default {
   }
   .pull-right{
     float: right !important;
+  }
+  .el-menu--horizontal {
+    border-bottom: none !important;
   }
 </style>
