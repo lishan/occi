@@ -2295,6 +2295,12 @@ ecc-jsbn@~0.1.1:
   dependencies:
     jsbn "~0.1.0"
 
+echarts@^4.0.3:
+  version "4.0.3"
+  resolved "http://registry.npm.taobao.org/echarts/download/echarts-4.0.3.tgz#14b0904407acf563e599fcaa9a33658b0b57cbc6"
+  dependencies:
+    zrender "4.0.2"
+
 ee-first@1.1.1:
   version "1.1.1"
   resolved "http://registry.npm.taobao.org/ee-first/download/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
@@ -7681,3 +7687,7 @@ yauzl@2.4.1:
 yeast@0.1.2:
   version "0.1.2"
   resolved "http://registry.npm.taobao.org/yeast/download/yeast-0.1.2.tgz#008e06d8094320c372dbc2f8ed76a0ca6c8ac419"
+
+zrender@4.0.2:
+  version "4.0.2"
+  resolved "http://registry.npm.taobao.org/zrender/download/zrender-4.0.2.tgz#d09e6e5d236e20ddc319436b0f00f6499f3a0024"

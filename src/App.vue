@@ -9,24 +9,24 @@
       text-color="#fff"
       active-text-color="#ffd04b"
       :router="true">
-      <el-menu-item disabled class="opa1">
+      <el-menu-item disabled class="opa1" index="">
         <img style="height: 40px; width: 40px; margin-left: 20px;" src="./assets/logo.png">
         大数据智能运维平台
       </el-menu-item>
       <el-menu-item style="margin-left: 60px;" index="/">仪表盘</el-menu-item>
       <el-menu-item index="/LogSearch">集群分析</el-menu-item>
-      <el-menu-item index="3">租户分析</el-menu-item>
-      <el-menu-item index="4">日志分析</el-menu-item>
-      <el-submenu index="2">
+      <el-menu-item index="">租户分析</el-menu-item>
+      <el-menu-item index="">日志分析</el-menu-item>
+      <el-submenu index="">
         <template slot="title">智能优化</template>
-        <el-menu-item index="2-1">Yarn计算资源配置优化</el-menu-item>
-        <el-menu-item index="2-2">集群扩容推荐</el-menu-item>
-        <el-menu-item index="2-3">集群拓扑结构</el-menu-item>
+        <el-menu-item index="">Yarn计算资源配置优化</el-menu-item>
+        <el-menu-item index="">集群扩容推荐</el-menu-item>
+        <el-menu-item index="">集群拓扑结构</el-menu-item>
       </el-submenu>
-      <el-menu-item class="pull-right" style="margin-right: 20px;">
+      <el-menu-item index="" class="pull-right" style="margin-right: 20px;">
         <i class="fa fa-user"></i>&nbsp;admin
       </el-menu-item>
-      <el-menu-item class="pull-right">
+      <el-menu-item index="" class="pull-right">
         <i class="fa fa-question-circle"></i>&nbsp;帮助
       </el-menu-item>
     </el-menu>
@@ -58,14 +58,14 @@ export default {
   html,body{
     margin: 0;
   }
-  .opa1{
-    opacity: 1 !important;
-    cursor: default !important;
+  .el-menu-item.is-disabled.opa1{
+    opacity: 1;
+    cursor: default;
   }
-  .pull-right{
-    float: right !important;
+  .el-menu--horizontal>.el-menu-item.pull-right{
+    float: right;
   }
-  .el-menu--horizontal {
-    border-bottom: none !important;
+  ul.el-menu {
+    border-bottom: none;
   }
 </style>
