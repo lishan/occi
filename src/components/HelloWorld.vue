@@ -19,7 +19,8 @@
               <i class="fa fa-circle fa-stack-2x" style="color: lightgreen"></i>
               <i class="fa fa-thumbs-o-up fa-stack-1x fa-inverse"></i>
             </span>
-          MapReduce作业日吞吐量(jobs)
+          MapReduce作业日吞吐量<br/>
+          <span>(jobs)</span>
           <h2>8337</h2>
         </el-card>
       </el-col>
@@ -29,7 +30,8 @@
               <i class="fa fa-circle fa-stack-2x" style="color: darkkhaki"></i>
               <i class="fa fa-quora fa-stack-1x fa-inverse"></i>
             </span>
-          Spark作业日吞吐量(jobs)
+          Spark作业日吞吐量<br/>
+          <span>(jobs)</span>
           <h2>834</h2>
         </el-card>
       </el-col>
